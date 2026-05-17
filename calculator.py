@@ -38,3 +38,4 @@ def absolute(x):
 
 def power(base, exp):
     return base ** exp
+// v9 verify
