@@ -13,3 +13,6 @@ def multiply(a, b):
 
 def average(numbers):
     return sum(numbers) / len(numbers)
+
+def square(x):
+    return x ** 2
