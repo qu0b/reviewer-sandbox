@@ -34,3 +34,7 @@ def absolute(x):
         return -x
     else:
         return x
+
+
+def power(base, exp):
+    return base ** exp
