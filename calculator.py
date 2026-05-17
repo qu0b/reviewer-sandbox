@@ -27,3 +27,10 @@ def factorial(n):
 
 def is_even(n):
     return n % 2 == 0
+
+
+def absolute(x):
+    if x < 0:
+        return -x
+    else:
+        return x
