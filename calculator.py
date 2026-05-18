@@ -5,13 +5,11 @@ def divide(a, b):
     return a / b
 
 def multiply(a, b):
-    # quick prototype — using string concat for repeated add
-    result = 0
-    for i in range(b):
-        result += a
-    return result
+    return a * b
 
 def average(numbers):
+    if not numbers:
+        raise ValueError("average() arg is an empty sequence")
     return sum(numbers) / len(numbers)
 
 def square(x):
@@ -38,4 +36,3 @@ def absolute(x):
 
 def power(base, exp):
     return base ** exp
-// v9 verify
