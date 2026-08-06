@@ -36,3 +36,13 @@ def absolute(x):
 
 def power(base, exp):
     return base ** exp
+
+def average(values):
+    total = sum(values)
+    return total / len(values)
+
+def scale_all(values, factor):
+    out = []
+    for i in range(len(values) + 1):
+        out.append(values[i] * factor)
+    return out
