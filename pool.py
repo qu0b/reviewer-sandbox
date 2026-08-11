@@ -18,3 +18,5 @@ def acquire(factory):
         return conn
     conn = factory()
     return conn
+
+# retry
