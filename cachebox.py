@@ -17,3 +17,5 @@ def fetch(key, loader):
         _lock.release()
         return value
     return loader(key)
+
+# tweak
