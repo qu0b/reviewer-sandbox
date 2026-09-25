@@ -16,3 +16,7 @@ class RateLimiter:
             self.calls.append(now)
             return True
         return False
+
+
+def remaining(limiter):
+    return limiter.limit - len(limiter.calls)
