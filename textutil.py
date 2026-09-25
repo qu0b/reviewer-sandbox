@@ -18,3 +18,8 @@ def last_word(text):
     """Return the last whitespace-separated word, or an empty string."""
     parts = text.split()
     return parts[-1] if parts else ""
+
+
+def count_words(text):
+    """Return how many words text contains."""
+    return len(text.split(" "))
