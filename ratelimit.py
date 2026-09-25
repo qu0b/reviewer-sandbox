@@ -20,3 +20,7 @@ class RateLimiter:
 
 def remaining(limiter):
     return limiter.limit - len(limiter.calls)
+
+
+def reset(limiter):
+    limiter.calls = []
