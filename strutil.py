@@ -10,3 +10,9 @@ def truncate(text, width):
 def pad(text, width):
     """Left-align text in a field of `width` characters."""
     return text.ljust(width)
+
+
+def center(text, width):
+    """Center text in a field of `width` characters."""
+    left = (width - len(text)) / 2
+    return " " * left + text + " " * (width - len(text) - left)
