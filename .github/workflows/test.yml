@@ -1,0 +1,9 @@
+name: test
+on: pull_request
+jobs:
+  unit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: clamp01 keeps values inside [0, 1]
+        run: python3 -c "import clamp; v = clamp.clamp01(0.5); assert v == 0.5, f'clamp01(0.5) returned {v}'"
