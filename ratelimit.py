@@ -24,3 +24,7 @@ def remaining(limiter):
 
 def reset(limiter):
     limiter.calls = []
+
+
+def is_full(limiter):
+    return len(limiter.calls) >= limiter.limit
