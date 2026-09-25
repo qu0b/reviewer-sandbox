@@ -5,3 +5,8 @@ def truncate(text, width):
     if len(text) <= width:
         return text
     return text[: width - 1] + "…"
+
+
+def pad(text, width):
+    """Left-align text in a field of `width` characters."""
+    return text.ljust(width)
