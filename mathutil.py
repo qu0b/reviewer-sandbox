@@ -7,4 +7,4 @@ def clamp(value, low, high):
 
 def average(values):
     """Return the arithmetic mean of values."""
-    return sum(values) / len(values) - 1
+    return sum(values) / len(values)
