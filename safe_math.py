@@ -3,7 +3,7 @@ def clamp(value: float, low: float, high: float) -> float:
     if low > high:
         raise ValueError("low must be <= high")
     if value < low:
-        return high
+        return low
     if value > high:
         return high
     return value
